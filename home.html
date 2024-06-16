@@ -1,0 +1,146 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaSurvival: Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="left-nav">
+      <ul>
+        <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord</a></li>
+        <li><a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit</a></li>
+      </ul>
+    </nav>
+    <div class="logo" id="logo">
+      <img src="jsicon.jpg" alt="Logo">
+    </div>
+
+    <nav class="right-nav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="slideshow-container">
+      <div class="slides"></div>
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p>mc.javasurvival.com</p>
+  </div>
+</footer>
+<script>
+  let slideIndex = 0;
+  const slides = [
+    {imageSrc: 'slideshowimgs/slide1.jpg', submittedBy: 'BradenM64'},
+    {imageSrc: 'slideshowimgs/slide2.jpg', submittedBy: 'AnnasJiyu'},
+    {imageSrc: 'slideshowimgs/slide3.jpg', submittedBy: '_NickVo'}
+  ];
+
+  let slideInterval;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    showSlides();
+    startSlideInterval();
+  });
+
+  function showSlides() {
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.innerHTML = '';
+
+    slides.forEach((slide, index) => {
+      const slideElement = document.createElement('div');
+      slideElement.classList.add('slide');
+      if (index === slideIndex) {
+        slideElement.style.display = 'block';
+      }
+
+      const imageElement = document.createElement('img');
+      imageElement.src = slide.imageSrc;
+      imageElement.alt = `Slide ${index + 1}`;
+
+      const submittedByElement = document.createElement('p');
+      submittedByElement.classList.add('submitted-by');
+      submittedByElement.textContent = `Submitted By: ${slide.submittedBy}`;
+
+      slideElement.appendChild(imageElement);
+      slideElement.appendChild(submittedByElement);
+
+      slidesContainer.appendChild(slideElement);
+    });
+  }
+
+  function moveSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    } else if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    showSlides();
+    resetSlideInterval();
+  }
+
+  function startSlideInterval() {
+    slideInterval = setInterval(() => {
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      showSlides();
+    }, 5000);
+  }
+
+  function resetSlideInterval() {
+    clearInterval(slideInterval);
+    startSlideInterval();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.getElementById('logo');
+    let heartTimeout;
+
+    logo.addEventListener('click', function () {
+      clearTimeout(heartTimeout);
+
+      const existingHearts = document.querySelectorAll('.heart');
+      existingHearts.forEach(heart => heart.remove());
+
+      const heart = document.createElement('div');
+      heart.innerHTML = '<3';
+      heart.classList.add('heart');
+      document.body.appendChild(heart);
+
+      positionHeart(heart);
+
+      heartTimeout = setTimeout(function () {
+        heart.remove();
+      }, 2000);
+    });
+
+    function positionHeart(heart) {
+      const rect = heart.getBoundingClientRect();
+      heart.style.top = `calc(50% - ${rect.height / 2}px)`;
+      heart.style.left = `calc(50% - ${rect.width / 2}px)`;
+    }
+  });
+
+</script>
+</body>
+</html>

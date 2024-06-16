@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaSurvival: About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="left-nav">
+      <ul>
+        <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord</a></li>
+        <li><a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit</a></li>
+      </ul>
+    </nav>
+    <div class="logo" id="logo">
+      <img src="jsicon.jpg" alt="Logo">
+    </div>
+    <nav class="right-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h2>About JavaSurvival</h2>
+    <p id="about-text">Loading...</p>
+    <p id="staff-message">With love and coffee - The JavaSurvival Staff Team</p>
+    <img id="staff-logo" src="jsicon.jpg" alt="JavaSurvival Logo">
+  </div>
+</main>
+f
+<footer>
+  <div class="container">
+    <p>mc.javasurvival.com</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('about.txt')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('about-text').textContent = data;
+      })
+      .catch(error => {
+        document.getElementById('about-text').textContent = 'Error loading content';
+        console.error('Error fetching about text:', error);
+      });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.getElementById('logo');
+    let heartTimeout;
+    logo.addEventListener('click', function () {
+      clearTimeout(heartTimeout);
+
+      const existingHearts = document.querySelectorAll('.heart');
+      existingHearts.forEach(heart => heart.remove());
+
+      const heart = document.createElement('div');
+      heart.innerHTML = '<3';
+      heart.classList.add('heart');
+      document.body.appendChild(heart);
+
+      positionHeart(heart);
+
+      heartTimeout = setTimeout(function () {
+        heart.remove();
+      }, 2000);
+    });
+
+    function positionHeart(heart) {
+      const rect = heart.getBoundingClientRect();
+      heart.style.top = `calc(50% - ${rect.height / 2}px)`;
+      heart.style.left = `calc(50% - ${rect.width / 2}px)`;
+    }
+  });
+
+</script>
+</body>
+</html>
