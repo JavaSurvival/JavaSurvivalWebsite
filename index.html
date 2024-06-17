@@ -7,8 +7,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-  </style>
 </head>
 <body>
 <header>
@@ -46,11 +44,17 @@
   </div>
 </footer>
 <script>
+  // {imageSrc: 'slideshowimgs/slideX.jpg', submittedBy: ''},
   let slideIndex = 0;
   const slides = [
-    {imageSrc: 'slideshowimgs/slide1.jpg', submittedBy: 'BradenM64'},
-    {imageSrc: 'slideshowimgs/slide2.jpg', submittedBy: 'AnnasJiyu'},
-    {imageSrc: 'slideshowimgs/slide3.jpg', submittedBy: '_NickVo'}
+    {imageSrc: 'slideshowimgs/slide1.jpg', submittedBy: 'JangiGabmeister'},
+    {imageSrc: 'slideshowimgs/slide2.jpg', submittedBy: 'PerAsperaSys'},
+    {imageSrc: 'slideshowimgs/slide3.jpg', submittedBy: 'Slystr'},
+    {imageSrc: 'slideshowimgs/slide4.jpg', submittedBy: 'DJ_HardLogic'},
+    {imageSrc: 'slideshowimgs/slide5.jpg', submittedBy: 'AnnasJiyu'},
+    {imageSrc: 'slideshowimgs/slide6.jpg', submittedBy: 'Slystr'},
+    {imageSrc: 'slideshowimgs/slide7.jpg', submittedBy: 'AnnasJiyu'},
+    {imageSrc: 'slideshowimgs/slide8.jpg', submittedBy: 'DJ_HardLogic'}
   ];
 
   let slideInterval;
@@ -74,6 +78,7 @@
       const imageElement = document.createElement('img');
       imageElement.src = slide.imageSrc;
       imageElement.alt = `Slide ${index + 1}`;
+      imageElement.classList.add('slide-img');
 
       const submittedByElement = document.createElement('p');
       submittedByElement.classList.add('submitted-by');
@@ -135,12 +140,10 @@
     });
 
     function positionHeart(heart) {
-      const rect = heart.getBoundingClientRect();
-      heart.style.top = `calc(50% - ${rect.height / 2}px)`;
-      heart.style.left = `calc(50% - ${rect.width / 2}px)`;
+      heart.style.top = `calc(50% - ${heart.offsetHeight / 2}px)`;
+      heart.style.left = `calc(50% - ${heart.offsetWidth / 2}px)`;
     }
   });
-
 </script>
 </body>
 </html>

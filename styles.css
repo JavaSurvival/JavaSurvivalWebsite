@@ -6,10 +6,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #f4f4f9;
-  overflow: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-/* Reset some default styles */
+/* Ensure all elements use border-box sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
@@ -20,7 +25,7 @@ body, h1, h2, p, ul, li {
 
 /* Container for fixed-width centered content */
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: auto;
   padding: 0 15px;
@@ -80,6 +85,7 @@ header .logo img {
 main {
   flex: 1;
   text-align: center;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -125,7 +131,6 @@ footer {
   height: 50px;
 }
 
-
 /* Responsive styles */
 @media (max-width: 768px) {
   header .container {
@@ -151,14 +156,16 @@ footer {
 
 @media (max-width: 480px) {
   .container {
-    width: 90%;
+    width: 100%;
+    padding: 0 5px;
   }
 }
 
 .slideshow-container {
   position: relative;
+  width: 100%;
   max-width: 100%;
-  margin-top: 20px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -166,9 +173,10 @@ footer {
   display: none;
 }
 
-.slide img {
+.slide-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensures image fits in the container */
 }
 
 .slide-content {
@@ -221,9 +229,6 @@ footer {
 
 .heart {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1000;
   font-size: 48px;
   color: #fd84fc;
