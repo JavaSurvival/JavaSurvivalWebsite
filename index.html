@@ -18,7 +18,9 @@
       </ul>
     </nav>
     <div class="logo" id="logo">
+      <a href="https://map.javasurvival.com" target="_blank" title="Click to view the world map">
       <img src="jsicon.jpg" alt="Logo">
+      </a>
     </div>
 
     <nav class="right-nav">
@@ -119,8 +121,8 @@
     clearInterval(slideInterval);
     startSlideInterval();
   }
-
-  document.addEventListener("DOMContentLoaded", function () {
+// old heart easter-egg
+/*  document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById('logo');
     let heartTimeout;
 
@@ -146,7 +148,7 @@
       heart.style.top = `calc(50% - ${heart.offsetHeight / 2}px)`;
       heart.style.left = `calc(50% - ${heart.offsetWidth / 2}px)`;
     }
-  });
+  }); */
 </script>
 </body>
 </html>
