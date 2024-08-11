@@ -19,7 +19,7 @@
     </nav>
     <div class="logo" id="logo">
       <a href="https://map.javasurvival.com" target="_blank" title="Click to view the world map">
-      <img src="jsicon.jpg" alt="Logo">
+        <img src="jsicon.jpg" alt="Logo">
       </a>
     </div>
 
@@ -121,34 +121,35 @@
     clearInterval(slideInterval);
     startSlideInterval();
   }
-// old heart easter-egg
-/*  document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.getElementById('logo');
-    let heartTimeout;
 
-    logo.addEventListener('click', function () {
-      clearTimeout(heartTimeout);
+  // old heart easter-egg
+  /*  document.addEventListener("DOMContentLoaded", function () {
+      const logo = document.getElementById('logo');
+      let heartTimeout;
 
-      const existingHearts = document.querySelectorAll('.heart');
-      existingHearts.forEach(heart => heart.remove());
+      logo.addEventListener('click', function () {
+        clearTimeout(heartTimeout);
 
-      const heart = document.createElement('div');
-      heart.innerHTML = '<3';
-      heart.classList.add('heart');
-      document.body.appendChild(heart);
+        const existingHearts = document.querySelectorAll('.heart');
+        existingHearts.forEach(heart => heart.remove());
 
-      positionHeart(heart);
+        const heart = document.createElement('div');
+        heart.innerHTML = '<3';
+        heart.classList.add('heart');
+        document.body.appendChild(heart);
 
-      heartTimeout = setTimeout(function () {
-        heart.remove();
-      }, 2000);
-    });
+        positionHeart(heart);
 
-    function positionHeart(heart) {
-      heart.style.top = `calc(50% - ${heart.offsetHeight / 2}px)`;
-      heart.style.left = `calc(50% - ${heart.offsetWidth / 2}px)`;
-    }
-  }); */
+        heartTimeout = setTimeout(function () {
+          heart.remove();
+        }, 2000);
+      });
+
+      function positionHeart(heart) {
+        heart.style.top = `calc(50% - ${heart.offsetHeight / 2}px)`;
+        heart.style.left = `calc(50% - ${heart.offsetWidth / 2}px)`;
+      }
+    }); */
 </script>
 </body>
 </html>
