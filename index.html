@@ -13,19 +13,17 @@
   <div class="container">
     <nav class="left-nav">
       <ul>
+        <li><a href="about.html">About</a></li>
         <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord</a></li>
-        <li><a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit</a></li>
       </ul>
     </nav>
     <div class="logo" id="logo">
-      <a href="https://map.javasurvival.com" target="_blank" title="Click to view the world map">
         <img src="jsicon.jpg" alt="Logo">
-      </a>
     </div>
 
     <nav class="right-nav">
       <ul>
-        <li><a href="about.html">About</a></li>
+        <li><a href="https://map.javasurvival.com" target="_blank">World Map</a></li>
         <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate</a></li>
       </ul>
     </nav>
@@ -122,34 +120,33 @@
     startSlideInterval();
   }
 
-  // old heart easter-egg
-  /*  document.addEventListener("DOMContentLoaded", function () {
-      const logo = document.getElementById('logo');
-      let heartTimeout;
+  document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.getElementById('logo');
+    let heartTimeout;
+    logo.addEventListener('click', function () {
+      clearTimeout(heartTimeout);
 
-      logo.addEventListener('click', function () {
-        clearTimeout(heartTimeout);
+      const existingHearts = document.querySelectorAll('.heart');
+      existingHearts.forEach(heart => heart.remove());
 
-        const existingHearts = document.querySelectorAll('.heart');
-        existingHearts.forEach(heart => heart.remove());
+      const heart = document.createElement('div');
+      heart.innerHTML = '<3';
+      heart.classList.add('heart');
+      document.body.appendChild(heart);
 
-        const heart = document.createElement('div');
-        heart.innerHTML = '<3';
-        heart.classList.add('heart');
-        document.body.appendChild(heart);
+      positionHeart(heart);
 
-        positionHeart(heart);
+      heartTimeout = setTimeout(function () {
+        heart.remove();
+      }, 2000);
+    });
 
-        heartTimeout = setTimeout(function () {
-          heart.remove();
-        }, 2000);
-      });
-
-      function positionHeart(heart) {
-        heart.style.top = `calc(50% - ${heart.offsetHeight / 2}px)`;
-        heart.style.left = `calc(50% - ${heart.offsetWidth / 2}px)`;
-      }
-    }); */
+    function positionHeart(heart) {
+      const rect = heart.getBoundingClientRect();
+      heart.style.top = `calc(50% - ${rect.height / 2}px)`;
+      heart.style.left = `calc(50% - ${rect.width / 2}px)`;
+    }
+  });
 </script>
 </body>
 </html>
