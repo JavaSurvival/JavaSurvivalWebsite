@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/javaenzx/public_html/
-    - /bin/cp -R JavaSurvivalWebsite $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
