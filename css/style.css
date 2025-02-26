@@ -29,12 +29,12 @@ body {
 /* Header styling */
 header {
   background: #222;
-  padding: 10px 0;
   position: relative; /* Ensure proper positioning of the hamburger menu */
 }
 
 header .logo {
   text-align: center;
+  padding-top: 20px;
 }
 
 header .logo img {
