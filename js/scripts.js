@@ -98,7 +98,7 @@ function setupHamburgerMenu() {
     });
   }
 }
-
+/*
 // Logo Click Effect
 function setupLogoHeartEffect() {
   const logo = document.getElementById('logo');
@@ -121,7 +121,7 @@ function setupLogoHeartEffect() {
 
     heartTimeout = setTimeout(() => heart.remove(), 2000);
   });
-}
+}*/
 
 function positionHeart(heart) {
   const rect = heart.getBoundingClientRect();
