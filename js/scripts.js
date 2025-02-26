@@ -2,14 +2,14 @@ console.log('  /\\_/\\  (\n' +
     ' ( ^.^ ) _)\n' +
     '   \\"/  (\n' +
     ' ( | | )\n' +
-    '(__d b__)\n' +
+    '(__d b__)\n\n' +
     'braden was here :)')
 
 
 document.addEventListener("DOMContentLoaded", function () {
   setupSlideshow();
   setupHamburgerMenu();
-  setupLogoHeartEffect();
+  // setupLogoHeartEffect();
 });
 
 // Slideshow Functionality
