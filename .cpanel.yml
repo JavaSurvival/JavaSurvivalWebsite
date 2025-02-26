@@ -2,7 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/javaenzx/public_html/
-    - /bin/cp -R index.html $DEPLOYPATH
     - /bin/cp -R about $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R home $DEPLOYPATH
