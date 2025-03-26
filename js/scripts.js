@@ -7,97 +7,118 @@ console.log('  /\\_/\\  (\n' +
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  setupSlideshow();
-  setupHamburgerMenu();
-  // setupLogoHeartEffect();
+    setupSlideshow();
+    setupHamburgerMenu();
+    // setupLogoHeartEffect();
 });
+
+// Slideshow Presets
+const j2Slides = [
+    {imageSrc: '/img/slideshowimgs/j2/DJ_HardLogic.jpg', submittedBy: 'DJ_HardLogic'},
+    {imageSrc: '/img/slideshowimgs/j2/PerAsperaSys.jpg', submittedBy: 'PerAsperaSys'},
+    {imageSrc: '/img/slideshowimgs/j2/Slystr.jpg', submittedBy: 'Slystr'},
+    {imageSrc: '/img/slideshowimgs/j2/AnnasJiyu.jpg', submittedBy: 'AnnasJiyu'},
+    {imageSrc: '/img/slideshowimgs/j2/PureWhiteMk7.jpg', submittedBy: 'PureWhiteMk7'},
+    {imageSrc: '/img/slideshowimgs/j2/Slystr1.jpg', submittedBy: 'Slystr'},
+    {imageSrc: '/img/slideshowimgs/j2/DJ_HardLogic1.jpg', submittedBy: 'DJ_HardLogic'},
+    {imageSrc: '/img/slideshowimgs/j2/WERTECHS.jpg', submittedBy: 'WERTECHS'},
+    {imageSrc: '/img/slideshowimgs/j2/BucketOfGondor.jpg', submittedBy: 'BucketOfGondor'},
+    {imageSrc: '/img/slideshowimgs/j2/AnnasJiyu1.jpg', submittedBy: 'AnnasJiyu'},
+    {imageSrc: '/img/slideshowimgs/j2/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister'}
+];
+
+const j3Slides = [
+    {}
+]
+
+// Thank you to aspera for providing these wonderful images!
+const christmasSlides = [
+    {imageSrc: '/img/slideshowimgs/christmas/christmas.jpg', submittedBy: 'n/a'},
+    {imageSrc: '/img/slideshowimgs/christmas/christmas1.jpg', submittedBy: 'n/a'},
+    {imageSrc: '/img/slideshowimgs/christmas/christmas2.jpg', submittedBy: 'n/a'},
+    {imageSrc: '/img/slideshowimgs/christmas/christmas3.jpg', submittedBy: 'n/a'},
+    {imageSrc: '/img/slideshowimgs/christmas/christmas4.jpg', submittedBy: 'n/a'}
+];
+
+const js3ComingSoon = [
+    {imageSrc: '/img/j2/joke/js3cs1920x1080.jpg', submittedBy: 'n/a'}
+]
 
 // Slideshow Functionality
 let slideIndex = 0;
-const slides = [
-  { imageSrc: '/img/slideshowimgs/DJ_HardLogic.jpg', submittedBy: 'DJ_HardLogic' },
-  { imageSrc: '/img/slideshowimgs/PerAsperaSys.jpg', submittedBy: 'PerAsperaSys' },
-  { imageSrc: '/img/slideshowimgs/Slystr.jpg', submittedBy: 'Slystr' },
-  { imageSrc: '/img/slideshowimgs/AnnasJiyu.jpg', submittedBy: 'AnnasJiyu' },
-  { imageSrc: '/img/slideshowimgs/PureWhiteMk7.jpg', submittedBy: 'PureWhiteMk7' },
-  { imageSrc: '/img/slideshowimgs/Slystr1.jpg', submittedBy: 'Slystr' },
-  { imageSrc: '/img/slideshowimgs/DJ_HardLogic1.jpg', submittedBy: 'DJ_HardLogic' },
-  { imageSrc: '/img/slideshowimgs/WERTECHS.jpg', submittedBy: 'WERTECHS' },
-  { imageSrc: '/img/slideshowimgs/BucketOfGondor.jpg', submittedBy: 'BucketOfGondor' },
-  { imageSrc: '/img/slideshowimgs/AnnasJiyu1.jpg', submittedBy: 'AnnasJiyu' },
-  { imageSrc: '/img/slideshowimgs/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister' }
-];
-
 let slideInterval;
+let slides = j2Slides; // Change this to quickly update slideshow preset
 
 function setupSlideshow() {
-  if (!document.querySelector('.slideshow-container')) return;
+    if (!document.querySelector('.slideshow-container')) return;
 
-  showSlides();
-  startSlideInterval();
+    showSlides();
+    startSlideInterval();
 
-  document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-  document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+    document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
+    document.querySelector('.next').addEventListener('click', () => moveSlide(1));
 }
 
 function showSlides() {
-  const slidesContainer = document.querySelector('.slides');
-  slidesContainer.innerHTML = '';
 
-  slides.forEach((slide, index) => {
-    const slideElement = document.createElement('div');
-    slideElement.classList.add('slide');
-    if (index === slideIndex) {
-      slideElement.style.display = 'block';
-    }
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.innerHTML = '';
 
-    const imageElement = document.createElement('img');
-    imageElement.src = slide.imageSrc;
-    imageElement.alt = `Slide ${index + 1}`;
-    imageElement.classList.add('slide-img');
+    slides.forEach((slide, index) => {
+        const slideElement = document.createElement('div');
+        slideElement.classList.add('slide');
+        if (index === slideIndex) {
+            slideElement.style.display = 'block';
+        }
 
-    const submittedByElement = document.createElement('p');
-    submittedByElement.classList.add('submitted-by');
-    submittedByElement.textContent = `Submitted By: ${slide.submittedBy}`;
+        const imageElement = document.createElement('img');
+        imageElement.src = slide.imageSrc;
+        imageElement.alt = `Slide ${index + 1}`;
+        imageElement.classList.add('slide-img');
 
-    slideElement.appendChild(imageElement);
-    if (slide.submittedBy !== 'n/a') {
-      slideElement.appendChild(submittedByElement);
-    }
+        const submittedByElement = document.createElement('p');
+        submittedByElement.classList.add('submitted-by');
+        submittedByElement.textContent = `Submitted By: ${slide.submittedBy}`;
 
-    slidesContainer.appendChild(slideElement);
-  });
+        slideElement.appendChild(imageElement);
+        if (slide.submittedBy !== 'n/a') {
+            slideElement.appendChild(submittedByElement);
+        }
+
+        slidesContainer.appendChild(slideElement);
+    });
 }
 
 function moveSlide(n) {
-  slideIndex = (slideIndex + n + slides.length) % slides.length;
-  showSlides();
-  resetSlideInterval();
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlides();
+    resetSlideInterval();
 }
 
 function startSlideInterval() {
-  slideInterval = setInterval(() => {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlides();
-  }, 5000);
+    slideInterval = setInterval(() => {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlides();
+    }, 5000);
 }
 
 function resetSlideInterval() {
-  clearInterval(slideInterval);
-  startSlideInterval();
+    clearInterval(slideInterval);
+    startSlideInterval();
 }
 
 // Hamburger Menu Toggle
 function setupHamburgerMenu() {
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
 
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  }
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 }
+
 /*
 // Logo Click Effect
 function setupLogoHeartEffect() {
@@ -124,7 +145,7 @@ function setupLogoHeartEffect() {
 }*/
 
 function positionHeart(heart) {
-  const rect = heart.getBoundingClientRect();
-  heart.style.top = `calc(50% - ${rect.height / 2}px)`;
-  heart.style.left = `calc(50% - ${rect.width / 2}px)`;
+    const rect = heart.getBoundingClientRect();
+    heart.style.top = `calc(50% - ${rect.height / 2}px)`;
+    heart.style.left = `calc(50% - ${rect.width / 2}px)`;
 }

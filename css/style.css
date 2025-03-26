@@ -84,31 +84,43 @@ header .logo img {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background: #f4f4f9;
-}
-
-@media (min-width: 768px) {
-    main {
-        padding: 20px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        padding: 10px 0;
-    }
+    padding: 20px;
 }
 
 main h2 {
     margin-bottom: 10px;
     font-weight: 600;
     color: #333;
+    text-align: center;
 }
 
 main p {
     margin-bottom: 20px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* Adjustments for different screen sizes */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+}
+
 
 #staff-logo {
     margin-top: 20px;
@@ -221,9 +233,18 @@ footer {
 
 /* Heart animation */
 @keyframes heart-pulse {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.3); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 0; }
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 .heart {
