@@ -151,10 +151,6 @@ const christmasSlides = [
     {imageSrc: '/img/slideshowimgs/christmas/christmas4.jpg', submittedBy: 'n/a'}
 ];
 
-const js3ComingSoon = [
-    {imageSrc: '/img/j2/joke/js3cs1920x1080.jpg', submittedBy: 'n/a'}
-]
-
 let slideIndex = 0;
 let slideInterval;
 let slides = j2Slides; // change this to change slideshow preset
