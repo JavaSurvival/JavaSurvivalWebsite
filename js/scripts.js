@@ -6,7 +6,8 @@ console.log('  /\\_/\\  (\n' +
     'braden was here :)')
 
 // Headers
-function homePageHeader() {
+// header links to about page
+function aboutPageHeader() {
     return `
     <header>
         <div class="container">
@@ -17,7 +18,7 @@ function homePageHeader() {
                 </ul>
             </nav>
             <div class="logo" id="logo">
-                <img src="/img/j2/jsicon.jpg" alt="Logo">
+                <img src="/img/j3/jsicon.jpg" alt="Logo">
             </div>
             <nav class="right-nav">
                 <ul>
@@ -41,7 +42,8 @@ function homePageHeader() {
     </header>`;
 }
 
-function aboutPageHeader() {
+// header links to home page
+function homePageHeader() {
     return `
     <header>
     <div class="container">
@@ -53,7 +55,7 @@ function aboutPageHeader() {
             </ul>
         </nav>
         <div class="logo" id="logo">
-            <img src="/img/j2/jsicon.jpg" alt="Logo">
+            <img src="/img/j3/jsicon.jpg" alt="Logo">
         </div>
 
         <nav class="right-nav">
@@ -151,6 +153,7 @@ const christmasSlides = [
     {imageSrc: '/img/slideshowimgs/christmas/christmas4.jpg', submittedBy: 'n/a'}
 ];
 
+// Slideshow code
 let slideIndex = 0;
 let slideInterval;
 let slides = j2Slides; // change this to change slideshow preset
