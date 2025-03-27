@@ -5,10 +5,40 @@ console.log('  /\\_/\\  (\n' +
     '(__d b__)\n\n' +
     'braden was here :)')
 
+// SVG handling
+function newTabArrowSVG() {
+    return `
+            <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
+                      stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+        `;
+}
 
+function downloadArrowSVG() {
+    return `
+            <svg width="" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.78 4.22a.75.75 0 0 1 0 1.06L6.56 10.5h3.69a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75v-5.5a.75.75 0 0 1 1.5 0v3.69l5.22-5.22a.75.75 0 0 1 1.06 0Z"
+                      stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+        `;
+}
+
+// Check if 'newTabArrow' exists before setting
+const newTabArrowElements = document.querySelectorAll('.newTabArrow');
+newTabArrowElements.forEach(element => {
+    element.innerHTML = newTabArrowSVG();
+});
+
+// Check if 'downloadArrow' exists before setting
+const downloadArrowElements = document.querySelectorAll('.downloadArrow');
+downloadArrowElements.forEach(element => {
+    element.innerHTML = downloadArrowSVG();
+});
+
+// Slideshow / Heart handling
 document.addEventListener("DOMContentLoaded", function () {
     setupSlideshow();
-    setupHamburgerMenu();
     // setupLogoHeartEffect();
 });
 
@@ -107,18 +137,6 @@ function resetSlideInterval() {
     startSlideInterval();
 }
 
-// Hamburger Menu Toggle
-function setupHamburgerMenu() {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    }
-}
-
 /*
 // Logo Click Effect
 function setupLogoHeartEffect() {
@@ -142,10 +160,10 @@ function setupLogoHeartEffect() {
 
     heartTimeout = setTimeout(() => heart.remove(), 2000);
   });
-}*/
+}
 
 function positionHeart(heart) {
     const rect = heart.getBoundingClientRect();
     heart.style.top = `calc(50% - ${rect.height / 2}px)`;
     heart.style.left = `calc(50% - ${rect.width / 2}px)`;
-}
+}*/
