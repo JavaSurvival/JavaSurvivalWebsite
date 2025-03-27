@@ -5,42 +5,123 @@ console.log('  /\\_/\\  (\n' +
     '(__d b__)\n\n' +
     'braden was here :)')
 
-// SVG handling
-function newTabArrowSVG() {
+// Headers
+function homePageHeader() {
     return `
-            <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
-                      stroke="currentColor" stroke-width="2" fill="none"/>
-            </svg>
-        `;
+    <header>
+        <div class="container">
+            <nav class="left-nav">
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a></li>
+                </ul>
+            </nav>
+            <div class="logo" id="logo">
+                <img src="/img/j2/jsicon.jpg" alt="Logo">
+            </div>
+            <nav class="right-nav">
+                <ul>
+                    <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
+                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">More...</button>
+            <div class="dropdown-content">
+                <div class="left-right-nav">
+                    <a href="/about">About</a>
+                    <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
+                    <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
+                </div>
+                <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+            </div>
+        </div>
+    </header>`;
 }
 
-function downloadArrowSVG() {
+function aboutPageHeader() {
     return `
-            <svg width="" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.78 4.22a.75.75 0 0 1 0 1.06L6.56 10.5h3.69a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75v-5.5a.75.75 0 0 1 1.5 0v3.69l5.22-5.22a.75.75 0 0 1 1.06 0Z"
-                      stroke="currentColor" stroke-width="2" fill="none"/>
-            </svg>
-        `;
+    <header>
+    <div class="container">
+        <nav class="left-nav">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo" id="logo">
+            <img src="/img/j2/jsicon.jpg" alt="Logo">
+        </div>
+
+        <nav class="right-nav">
+            <ul>
+                <li><a href="https://map.javasurvival.com" target="_blank">World Map<span
+                        class="newTabArrow"></span></a> <i
+                        class="fas fa-external-link"></i></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span
+                        class="newTabArrow"></span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">More...</button>
+        <div class="dropdown-content">
+            <div class="left-right-nav">
+                <a href="/home">Home</a>
+                <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span
+                        class="newTabArrow"></span></a>
+            </div>
+            <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+        </div>
+    </div>
+</header>
+    `;
 }
 
-// Check if 'newTabArrow' exists before setting
-const newTabArrowElements = document.querySelectorAll('.newTabArrow');
-newTabArrowElements.forEach(element => {
-    element.innerHTML = newTabArrowSVG();
-});
+// Footer
+function footer() {
+    return `
+<footer>
+    <div class="container">
+        <p>mc.javasurvival.com</p>
+    </div>
+</footer>`;
+}
 
-// Check if 'downloadArrow' exists before setting
-const downloadArrowElements = document.querySelectorAll('.downloadArrow');
-downloadArrowElements.forEach(element => {
-    element.innerHTML = downloadArrowSVG();
-});
+// SVG Icons
+function createSVGIcon(pathData) {
+    return `
+        <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="${pathData}" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>`;
+}
 
-// Slideshow / Heart handling
-document.addEventListener("DOMContentLoaded", function () {
+const newTabArrowSVG = createSVGIcon("M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z");
+const downloadArrowSVG = createSVGIcon("M11.78 4.22a.75.75 0 0 1 0 1.06L6.56 10.5h3.69a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75v-5.5a.75.75 0 0 1 1.5 0v3.69l5.22-5.22a.75.75 0 0 1 1.06 0Z");
+
+// Apply Content
+function applyContent(selector, content) {
+    document.querySelectorAll(selector).forEach(element => {
+        element.innerHTML = content;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    applyContent('.homePageHeader', homePageHeader());
+    applyContent('.aboutPageHeader', aboutPageHeader());
+    applyContent('.footer', footer());
+    applyContent('.newTabArrow', newTabArrowSVG);
+    applyContent('.downloadArrow', downloadArrowSVG);
     setupSlideshow();
-    // setupLogoHeartEffect();
 });
+
 
 // Slideshow Presets
 const j2Slides = [
@@ -74,49 +155,26 @@ const js3ComingSoon = [
     {imageSrc: '/img/j2/joke/js3cs1920x1080.jpg', submittedBy: 'n/a'}
 ]
 
-// Slideshow Functionality
 let slideIndex = 0;
 let slideInterval;
-let slides = j2Slides; // Change this to quickly update slideshow preset
+let slides = j2Slides; // change this to change slideshow preset
 
 function setupSlideshow() {
     if (!document.querySelector('.slideshow-container')) return;
-
     showSlides();
     startSlideInterval();
-
     document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
     document.querySelector('.next').addEventListener('click', () => moveSlide(1));
 }
 
 function showSlides() {
-
     const slidesContainer = document.querySelector('.slides');
-    slidesContainer.innerHTML = '';
-
-    slides.forEach((slide, index) => {
-        const slideElement = document.createElement('div');
-        slideElement.classList.add('slide');
-        if (index === slideIndex) {
-            slideElement.style.display = 'block';
-        }
-
-        const imageElement = document.createElement('img');
-        imageElement.src = slide.imageSrc;
-        imageElement.alt = `Slide ${index + 1}`;
-        imageElement.classList.add('slide-img');
-
-        const submittedByElement = document.createElement('p');
-        submittedByElement.classList.add('submitted-by');
-        submittedByElement.textContent = `Submitted By: ${slide.submittedBy}`;
-
-        slideElement.appendChild(imageElement);
-        if (slide.submittedBy !== 'n/a') {
-            slideElement.appendChild(submittedByElement);
-        }
-
-        slidesContainer.appendChild(slideElement);
-    });
+    slidesContainer.innerHTML = slides.map((slide, index) => `
+        <div class="slide" style="display: ${index === slideIndex ? 'block' : 'none'}">
+            <img src="${slide.imageSrc}" alt="Slide ${index + 1}" class="slide-img">
+            ${slide.submittedBy !== 'n/a' ? `<p class="submitted-by">Submitted By: ${slide.submittedBy}</p>` : ''}
+        </div>`
+    ).join('');
 }
 
 function moveSlide(n) {
@@ -136,34 +194,3 @@ function resetSlideInterval() {
     clearInterval(slideInterval);
     startSlideInterval();
 }
-
-/*
-// Logo Click Effect
-function setupLogoHeartEffect() {
-  const logo = document.getElementById('logo');
-
-  if (!logo) return;
-
-  let heartTimeout;
-
-  logo.addEventListener('click', function () {
-    clearTimeout(heartTimeout);
-
-    document.querySelectorAll('.heart').forEach(heart => heart.remove());
-
-    const heart = document.createElement('div');
-    heart.innerHTML = '<3';
-    heart.classList.add('heart');
-    document.body.appendChild(heart);
-
-    positionHeart(heart);
-
-    heartTimeout = setTimeout(() => heart.remove(), 2000);
-  });
-}
-
-function positionHeart(heart) {
-    const rect = heart.getBoundingClientRect();
-    heart.style.top = `calc(50% - ${rect.height / 2}px)`;
-    heart.style.left = `calc(50% - ${rect.width / 2}px)`;
-}*/
