@@ -12,9 +12,10 @@ function aboutPageHeader() {
     <header>
         <div class="container">
             <nav class="left-nav">
-                <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a></li>
+            <ul>
+                <!--Links to the left of the icon-->
+                <li><a href="/about">About</a></li>
+                <li><a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
             <div class="logo" id="logo">
@@ -22,21 +23,30 @@ function aboutPageHeader() {
             </div>
             <nav class="right-nav">
                 <ul>
-                    <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
-                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a></li>
+                    <!--Links to the right of the icon-->
+                    <li><a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a></li>
+                    <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
         </div>
+        <button class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
         <div class="dropdown">
-            <button class="dropbtn">More...</button>
             <div class="dropdown-content">
                 <div class="left-right-nav">
+                    <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/about">About</a>
-                    <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
-                    <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
-                    <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
+                    <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+                    <a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a>
+                    <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
                 </div>
-                <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+                <!-- These links always display in the dropdown -->
+                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
         </div>
     </header>`;
@@ -46,45 +56,46 @@ function aboutPageHeader() {
 function homePageHeader() {
     return `
     <header>
-    <div class="container">
-        <nav class="left-nav">
+        <div class="container">
+            <nav class="left-nav">
             <ul>
+                <!--Links to the left of the icon-->
                 <li><a href="/home">Home</a></li>
-                <li><a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="logo" id="logo">
-            <img src="/img/j3/jsicon.jpg" alt="Logo">
-        </div>
-
-        <nav class="right-nav">
-            <ul>
-                <li><a href="https://map.javasurvival.com" target="_blank">World Map<span
-                        class="newTabArrow"></span></a> <i
-                        class="fas fa-external-link"></i></li>
-                <li><a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span
-                        class="newTabArrow"></span></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">More...</button>
-        <div class="dropdown-content">
-            <div class="left-right-nav">
-                <a href="/home">Home</a>
-                <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
-                <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span
-                        class="newTabArrow"></span></a>
+                <li><a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a></li>
+                </ul>
+            </nav>
+            <div class="logo" id="logo">
+                <img src="/img/j3/jsicon.jpg" alt="Logo">
             </div>
-            <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+            <nav class="right-nav">
+                <ul>
+                    <!--Links to the right of the icon-->
+                    <li><a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a></li>
+                    <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</header>
-    `;
+        <button class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <div class="left-right-nav">
+                    <!-- These links only display in the dropdown when viewing on mobile devices -->
+                    <a href="/home">Home</a>
+                    <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
+                    <a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a>
+                    <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
+                </div>
+                <!-- These links always display in the dropdown -->
+                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
+            </div>
+        </div>
+    </header>`;
 }
 
 // Footer
@@ -122,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applyContent('.newTabArrow', newTabArrowSVG);
     applyContent('.downloadArrow', downloadArrowSVG);
     setupSlideshow();
+    setupHamburger()
 });
 
 
@@ -140,9 +152,7 @@ const j2Slides = [
     {imageSrc: '/img/slideshowimgs/j2/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister'}
 ];
 
-const j3Slides = [
-    {}
-]
+const j3Slides = [{}]
 
 // Thank you to aspera for providing these wonderful images!
 const christmasSlides = [
@@ -152,6 +162,23 @@ const christmasSlides = [
     {imageSrc: '/img/slideshowimgs/christmas/christmas3.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/christmas/christmas4.jpg', submittedBy: 'n/a'}
 ];
+
+// Hamburger code
+function setupHamburger() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const dropdownMenu = document.querySelector('.dropdown');
+
+    hamburgerMenu.addEventListener('click', function () {
+        hamburgerMenu.classList.toggle('active');
+        dropdownMenu.classList.toggle('active');
+    });
+    document.addEventListener("click", function (event) {
+        if (!hamburgerMenu.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            hamburgerMenu.classList.remove('active');
+            dropdownMenu.classList.remove("active");
+        }
+    });
+}
 
 // Slideshow code
 let slideIndex = 0;
@@ -172,8 +199,7 @@ function showSlides() {
         <div class="slide" style="display: ${index === slideIndex ? 'block' : 'none'}">
             <img src="${slide.imageSrc}" alt="Slide ${index + 1}" class="slide-img">
             ${slide.submittedBy !== 'n/a' ? `<p class="submitted-by">Submitted By: ${slide.submittedBy}</p>` : ''}
-        </div>`
-    ).join('');
+        </div>`).join('');
 }
 
 function moveSlide(n) {
