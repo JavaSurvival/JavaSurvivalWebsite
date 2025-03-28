@@ -15,7 +15,7 @@ function aboutPageHeader() {
             <ul>
                 <!--Links to the left of the icon-->
                 <li><a href="/about">About</a></li>
-                <li><a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a></li>
+                <li><a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
             <div class="logo" id="logo">
@@ -24,7 +24,7 @@ function aboutPageHeader() {
             <nav class="right-nav">
                 <ul>
                     <!--Links to the right of the icon-->
-                    <li><a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a></li>
+                    <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
                     <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
@@ -39,14 +39,14 @@ function aboutPageHeader() {
                 <div class="left-right-nav">
                     <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/about">About</a>
-                    <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
-                    <a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a>
+                    <a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a>
+                    <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
                     <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
                 </div>
                 <!-- These links always display in the dropdown -->
-                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
-                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
+                <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://www.reddit.com/r/JavaSurvival" target="_blank">Reddit<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
         </div>
     </header>`;
@@ -61,7 +61,7 @@ function homePageHeader() {
             <ul>
                 <!--Links to the left of the icon-->
                 <li><a href="/home">Home</a></li>
-                <li><a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a></li>
+                <li><a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
             <div class="logo" id="logo">
@@ -70,7 +70,7 @@ function homePageHeader() {
             <nav class="right-nav">
                 <ul>
                     <!--Links to the right of the icon-->
-                    <li><a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a></li>
+                    <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
                     <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
@@ -85,14 +85,14 @@ function homePageHeader() {
                 <div class="left-right-nav">
                     <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/home">Home</a>
-                    <a href="https://forums.javasurvival.com/" target="_blank">Forums<span class="newTabArrow"></span></a>
-                    <a href="https://map.javasurvival.com/" target="_blank">World Map<span class="newTabArrow"></span></a>
+                    <a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a>
+                    <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
                     <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
                 </div>
                 <!-- These links always display in the dropdown -->
-                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
-                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
+                <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://www.reddit.com/r/JavaSurvival" target="_blank">Reddit<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
         </div>
     </header>`;
