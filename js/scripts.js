@@ -25,7 +25,7 @@ function aboutPageHeader() {
                 <ul>
                     <!--Links to the right of the icon-->
                     <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
-                    <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
+                    <li><a href="/stats" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,7 @@ function aboutPageHeader() {
                     <a href="/about">About</a>
                     <a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a>
                     <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
-                    <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
+                    <a href="/stats" target="_blank">Statistics<span class="newTabArrow"></span></a>
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
@@ -71,7 +71,7 @@ function homePageHeader() {
                 <ul>
                     <!--Links to the right of the icon-->
                     <li><a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a></li>
-                    <li><a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
+                    <li><a href="/stats" target="_blank">Statistics<span class="newTabArrow"></span></a></li>
                 </ul>
             </nav>
         </div>
@@ -87,7 +87,7 @@ function homePageHeader() {
                     <a href="/home">Home</a>
                     <a href="https://forums.javasurvival.com" target="_blank">Forums<span class="newTabArrow"></span></a>
                     <a href="https://map.javasurvival.com" target="_blank">World Map<span class="newTabArrow"></span></a>
-                    <a href="/statsPlaceholder" target="_blank">Statistics<span class="newTabArrow"></span></a>
+                    <a href="/stats" target="_blank">Statistics<span class="newTabArrow"></span></a>
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="https://discord.gg/bthyXut3KB" target="_blank">Discord<span class="newTabArrow"></span></a>
