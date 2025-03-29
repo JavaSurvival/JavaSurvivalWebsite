@@ -158,7 +158,7 @@ const j3Slides = [
     {imageSrc: '/img/slideshowimgs/j3/TinyDog_.jpg', submittedBy: 'TinyDog_'},
     {imageSrc: '/img/slideshowimgs/j3/Pallonalle.jpg', submittedBy: 'Pallonalle'},
     {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
-    {imageSrc: '/img/slideshowimgs/j3/_cubehamster.jpg', submittedBy: '_cubehamster'}
+    // {imageSrc: '/img/slideshowimgs/j3/_cubehamster.jpg', submittedBy: '_cubehamster'}
 ];
 
 // Thank you to aspera for providing these wonderful images!
