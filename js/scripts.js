@@ -152,7 +152,14 @@ const j2Slides = [
     {imageSrc: '/img/slideshowimgs/j2/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister'}
 ];
 
-const j3Slides = [{}]
+const j3Slides = [
+    {imageSrc: '/img/slideshowimgs/j3/Pallonalle1.jpg', submittedBy: 'Pallonalle'},
+    {imageSrc: '/img/slideshowimgs/j3/Atomic_Snarl.jpg', submittedBy: 'Atomic_Snarl'},
+    {imageSrc: '/img/slideshowimgs/j3/TinyDog_.jpg', submittedBy: 'TinyDog_'},
+    {imageSrc: '/img/slideshowimgs/j3/Pallonalle.jpg', submittedBy: 'Pallonalle'},
+    {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
+    {imageSrc: '/img/slideshowimgs/j3/_cubehamster.jpg', submittedBy: '_cubehamster'},
+];
 
 // Thank you to aspera for providing these wonderful images!
 const christmasSlides = [
@@ -183,7 +190,7 @@ function setupHamburger() {
 // Slideshow code
 let slideIndex = 0;
 let slideInterval;
-let slides = j2Slides; // change this to change slideshow preset
+let slides = j3Slides; // change this to change slideshow preset
 
 function setupSlideshow() {
     if (!document.querySelector('.slideshow-container')) return;
