@@ -47,7 +47,7 @@ function aboutPageHeader() {
                 <a href="/downloads">Downloads</a>
                 <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
         </div>
     </header>`;
@@ -94,7 +94,7 @@ function homePageHeader() {
                 <a href="/downloads">Downloads</a>
                 <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW/" target="_blank">Donate<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
         </div>
     </header>`;
