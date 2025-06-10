@@ -50,7 +50,7 @@ const consoleMessages = [
 
     'mmm... reddit...',
 
-    'https://discord.gg/bthyXut3KB',
+    'https://discord.gg/NAs8nQw',
 ]
 
 const randomMessage = consoleMessages[Math.floor(Math.random() * consoleMessages.length)];
