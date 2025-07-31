@@ -161,7 +161,7 @@ const j3Slides = [
     {imageSrc: '/img/slideshowimgs/j3/BradenM64.jpg', submittedBy: 'BradenM64'},
     {imageSrc: '/img/slideshowimgs/j3/Pallonalle.jpg', submittedBy: 'Pallonalle'},
     {imageSrc: '/img/slideshowimgs/j3/Annaas.jpg', submittedBy: 'Annaas'},
-    {imageSrc: '/img/slideshowimgs/j3/TacitusKG.jpg', submittedBy: 'TacitusKG'},
+    {imageSrc: '/img/slideshowimgs/j3/TacitusKG.jpg', submittedBy: 'TacitusKG'}
     /* old
     {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
     {imageSrc: '/img/slideshowimgs/j3/TinyDog_.jpg', submittedBy: 'TinyDog_'},
@@ -178,6 +178,17 @@ const christmasSlides = [
     {imageSrc: '/img/slideshowimgs/christmas/christmas2.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/christmas/christmas3.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/christmas/christmas4.jpg', submittedBy: 'n/a'}
+];
+
+// Sneaky Screenshots Summer '25 Event
+const snscsu25 = [
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/PerAsperaSys.jpg', submittedBy: 'PerAsperaSys'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/sw4gg7.jpg', submittedBy: 'sw4gg7'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/BradenM64.jpg', submittedBy: 'BradenM64'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/JangiGabmeister2.jpg', submittedBy: 'JangiGabmeister'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/ShadowKing_28.jpg', submittedBy: 'ShadowKing_28'},
+    {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/sw4gg72.jpg', submittedBy: 'sw4gg7'}
 ];
 
 // Hamburger code
@@ -200,7 +211,7 @@ function setupHamburger() {
 // Slideshow code
 let slideIndex = 0;
 let slideInterval;
-let slides = j3Slides; // change this to change slideshow preset
+let slides = snscsu25; // change this to change slideshow preset
 
 function setupSlideshow() {
     if (!document.querySelector('.slideshow-container')) return;
