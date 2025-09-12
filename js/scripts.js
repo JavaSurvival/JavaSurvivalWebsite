@@ -263,7 +263,7 @@ function setupHamburger() {
 // Slideshow code
 let slideIndex = 0;
 let slideInterval;
-let slides = snscsu25; // change this to change slideshow preset
+let slides = j3Slides; // change this to change slideshow preset
 
 function setupSlideshow() {
     if (!document.querySelector('.slideshow-container')) return;
