@@ -207,19 +207,31 @@ const j2Slides = [
 ];
 
 const j3Slides = [
+    {imageSrc: '/img/slideshowimgs/j3/Potatoboy9999.jpg', submittedBy: 'Potatoboy9999'},
+    {imageSrc: '/img/slideshowimgs/j3/Annaas.1.jpg', submittedBy: 'Annaas'},
+    {imageSrc: '/img/slideshowimgs/j3/PureWhiteMk7.1.jpg', submittedBy: 'PureWhiteMk7'},
+    {imageSrc: '/img/slideshowimgs/j3/GooseOnnaLoose.jpg', submittedBy: 'GooseOnnaLoose'},
+    {imageSrc: '/img/slideshowimgs/j3/_Shadow55.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/Vloxer.jpg', submittedBy: 'Vloxer'},
+    {imageSrc: '/img/slideshowimgs/j3/ScareCrow_Wheat.jpg', submittedBy: 'ScareCrow_Wheat'},
+    {imageSrc: '/img/slideshowimgs/j3/_Shadow55.1.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/WERTECHS.jpg', submittedBy: 'WERTECHS'},
+    {imageSrc: '/img/slideshowimgs/j3/XxShMODyXx.jpg', submittedBy: 'XxShMODyXx'}
+
+    /* old
+    {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
+    {imageSrc: '/img/slideshowimgs/j3/TinyDog_.jpg', submittedBy: 'TinyDog_'},
+    {imageSrc: '/img/slideshowimgs/j3/Pallonalle.1.jpg', submittedBy: 'Pallonalle'},
+    {imageSrc: '/img/slideshowimgs/j3/Atomic_Snarl.jpg', submittedBy: 'Atomic_Snarl'},
+    {imageSrc: '/img/slideshowimgs/j3/cubehamster.jpg', submittedBy: '_cubehamster'},
     {imageSrc: '/img/slideshowimgs/j3/PureWhiteMk7.jpg', submittedBy: 'PureWhiteMk7'},
     {imageSrc: '/img/slideshowimgs/j3/Lamp_Sauce.jpg', submittedBy: 'Lamp_Sauce'},
     {imageSrc: '/img/slideshowimgs/j3/Upgrade1251.jpg', submittedBy: 'Upgrade1251'},
     {imageSrc: '/img/slideshowimgs/j3/BradenM64.jpg', submittedBy: 'BradenM64'},
     {imageSrc: '/img/slideshowimgs/j3/Pallonalle.jpg', submittedBy: 'Pallonalle'},
     {imageSrc: '/img/slideshowimgs/j3/Annaas.jpg', submittedBy: 'Annaas'},
-    {imageSrc: '/img/slideshowimgs/j3/TacitusKG.jpg', submittedBy: 'TacitusKG'}
-    /* old
-    {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
-    {imageSrc: '/img/slideshowimgs/j3/TinyDog_.jpg', submittedBy: 'TinyDog_'},
-    {imageSrc: '/img/slideshowimgs/j3/Pallonalle1.jpg', submittedBy: 'Pallonalle'},
-    {imageSrc: '/img/slideshowimgs/j3/Atomic_Snarl.jpg', submittedBy: 'Atomic_Snarl'},
-    {imageSrc: '/img/slideshowimgs/j3/cubehamster.jpg', submittedBy: '_cubehamster'},
+    {imageSrc: '/img/slideshowimgs/j3/TacitusKG.jpg', submittedBy: 'TacitusKG'},
+    {imageSrc: '/img/slideshowimgs/j3/WERTECHS.1.jpg', submittedBy: 'WERTECHS'},
      */
 ];
 
