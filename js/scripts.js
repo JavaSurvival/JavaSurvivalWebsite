@@ -211,10 +211,10 @@ const j3Slides = [
     {imageSrc: '/img/slideshowimgs/j3/Annaas.1.jpg', submittedBy: 'Annaas'},
     {imageSrc: '/img/slideshowimgs/j3/PureWhiteMk7.1.jpg', submittedBy: 'PureWhiteMk7'},
     {imageSrc: '/img/slideshowimgs/j3/GooseOnnaLoose.jpg', submittedBy: 'GooseOnnaLoose'},
-    {imageSrc: '/img/slideshowimgs/j3/_Shadow55.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/Shadow55.jpg', submittedBy: '_Shadow55'},
     {imageSrc: '/img/slideshowimgs/j3/Vloxer.jpg', submittedBy: 'Vloxer'},
     {imageSrc: '/img/slideshowimgs/j3/ScareCrow_Wheat.jpg', submittedBy: 'ScareCrow_Wheat'},
-    {imageSrc: '/img/slideshowimgs/j3/_Shadow55.1.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/Shadow55.1.jpg', submittedBy: '_Shadow55'},
     {imageSrc: '/img/slideshowimgs/j3/WERTECHS.jpg', submittedBy: 'WERTECHS'},
     {imageSrc: '/img/slideshowimgs/j3/XxShMODyXx.jpg', submittedBy: 'XxShMODyXx'}
 
