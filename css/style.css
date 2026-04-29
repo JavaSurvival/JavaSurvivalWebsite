@@ -118,6 +118,33 @@ main p {
     text-align: center;
 }
 
+/* Rules page styling */
+.rules-page {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.rules-page .container {
+    margin: 0;
+}
+
+.rules-page p {
+    text-align: left;
+}
+
+.rules-page h1 {
+    text-align: center;
+}
+
+.sections-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    text-align: center;
+}
+
 /* Hamburger menu styling */
 .hamburger-menu {
     position: absolute;

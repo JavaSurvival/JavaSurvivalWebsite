@@ -67,7 +67,7 @@ function aboutPageHeader() {
             <ul>
                 <!--Links to the left of the icon-->
                 <li><a href="/about">About</a></li>
-                <li><a href="https://forums.javasurvival.com">Forums</a></li>
+                <li><a href="/rules">Rules</a></li>
                 </ul>
             </nav>
             <div class="logo" id="logo">
@@ -91,7 +91,7 @@ function aboutPageHeader() {
                 <div class="left-right-nav">
                     <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/about">About</a>
-                    <a href="https://forums.javasurvival.com">Forums</a>
+                    <a href="/rules">Rules</a>
                     <a href="https://map.javasurvival.com">World Map</a>
                     <a href="/stats">Statistics</a>
                 </div>
@@ -114,7 +114,7 @@ function homePageHeader() {
             <ul>
                 <!--Links to the left of the icon-->
                 <li><a href="/home">Home</a></li>
-                <li><a href="https://forums.javasurvival.com">Forums</a></li>
+                <li><a href="/rules">Rules</a></li>
                 </ul>
             </nav>
             <div class="logo" id="logo">
@@ -138,7 +138,7 @@ function homePageHeader() {
                 <div class="left-right-nav">
                     <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/home">Home</a>
-                    <a href="https://forums.javasurvival.com">Forums</a>
+                    <a href="/rules">Rules</a>
                     <a href="https://map.javasurvival.com">World Map</a>
                     <a href="/stats">Statistics</a>
                 </div>
