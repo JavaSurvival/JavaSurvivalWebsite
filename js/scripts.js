@@ -185,7 +185,7 @@ function homeAboutPageHeader() {
                 <div class="left-right-nav">
                     <!-- These links only display in the dropdown when viewing on mobile devices -->
                     <a href="/home">Home</a>
-                    <a href="/rules">Rules</a>
+                    <a href="/about">About</a>
                     <a href="https://map.javasurvival.com">World Map</a>
                     <a href="/stats">Statistics</a>
                 </div>
