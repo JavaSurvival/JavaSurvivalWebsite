@@ -152,6 +152,53 @@ function homePageHeader() {
     </header>`;
 }
 
+// header links to home and about page
+function homeAboutPageHeader() {
+    return `
+    <header>
+        <div class="container">
+            <nav class="left-nav">
+            <ul>
+                <!--Links to the left of the icon-->
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+            <div class="logo" id="logo">
+                <img src="/img/j3/jsicon.jpg" alt="Logo">
+            </div>
+            <nav class="right-nav">
+                <ul>
+                    <!--Links to the right of the icon-->
+                    <li><a href="https://map.javasurvival.com">World Map</a></li>
+                    <li><a href="/stats">Statistics</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <div class="left-right-nav">
+                    <!-- These links only display in the dropdown when viewing on mobile devices -->
+                    <a href="/home">Home</a>
+                    <a href="/rules">Rules</a>
+                    <a href="https://map.javasurvival.com">World Map</a>
+                    <a href="/stats">Statistics</a>
+                </div>
+                <!-- These links always display in the dropdown -->
+                <a href="/downloads">Downloads</a>
+                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=42HLPCHHT4DRW" target="_blank">Donate<span class="newTabArrow"></span></a>
+            </div>
+        </div>
+    </header>`;
+}
+
 // Footer
 function footer() {
     return `
@@ -183,6 +230,7 @@ function applyContent(selector, content) {
 document.addEventListener("DOMContentLoaded", () => {
     applyContent('.homePageHeader', homePageHeader());
     applyContent('.aboutPageHeader', aboutPageHeader());
+    applyContent('.homeAboutPageHeader', homeAboutPageHeader());
     applyContent('.footer', footer());
     applyContent('.newTabArrow', newTabArrowSVG);
     applyContent('.downloadArrow', downloadArrowSVG);
