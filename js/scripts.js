@@ -97,7 +97,7 @@ function aboutPageHeader() {
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="/downloads">Downloads</a>
-                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://discord.gg/NAs8nQw" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
                 <a href="https://ko-fi.com/javasurvival" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
@@ -144,7 +144,7 @@ function homePageHeader() {
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="/downloads">Downloads</a>
-                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://discord.gg/NAs8nQw" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
                 <a href="https://ko-fi.com/javasurvival" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
@@ -191,7 +191,7 @@ function homeAboutPageHeader() {
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="/downloads">Downloads</a>
-                <a href="https://discord.gg/bthyXut3KB/" target="_blank">Discord<span class="newTabArrow"></span></a>
+                <a href="https://discord.gg/NAs8nQw" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
                 <a href="https://ko-fi.com/javasurvival" target="_blank">Donate<span class="newTabArrow"></span></a>
             </div>
