@@ -255,17 +255,17 @@ const j2Slides = [
 ];
 
 const j3Slides = [
-    {imageSrc: '/img/slideshowimgs/j3/Potatoboy9999.jpg', submittedBy: 'Potatoboy9999'},
-    {imageSrc: '/img/slideshowimgs/j3/Annaas.1.jpg', submittedBy: 'Annaas'},
-    {imageSrc: '/img/slideshowimgs/j3/PureWhiteMk7.1.jpg', submittedBy: 'PureWhiteMk7'},
-    {imageSrc: '/img/slideshowimgs/j3/GooseOnnaLoose.jpg', submittedBy: 'GooseOnnaLoose'},
-    {imageSrc: '/img/slideshowimgs/j3/Shadow55.jpg', submittedBy: '_Shadow55'},
-    {imageSrc: '/img/slideshowimgs/j3/Vloxer.jpg', submittedBy: 'Vloxer'},
-    {imageSrc: '/img/slideshowimgs/j3/ScareCrow_Wheat.jpg', submittedBy: 'ScareCrow_Wheat'},
-    {imageSrc: '/img/slideshowimgs/j3/Atomic_Snarl.1.jpg', submittedBy: 'Atomic_Snarl'},
-    {imageSrc: '/img/slideshowimgs/j3/Shadow55.1.jpg', submittedBy: '_Shadow55'},
-    {imageSrc: '/img/slideshowimgs/j3/WERTECHS.jpg', submittedBy: 'WERTECHS'},
-    {imageSrc: '/img/slideshowimgs/j3/XxShMODyXx.jpg', submittedBy: 'XxShMODyXx'}
+
+    {imageSrc: '/img/slideshowimgs/j3/onaloose.jpg', submittedBy: 'onaloose'},
+    {imageSrc: '/img/slideshowimgs/j3/Shadow55.2.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/Cemiskos.jpg', submittedBy: 'Cemiskos'},
+    {imageSrc: '/img/slideshowimgs/j3/ThamesCairn.jpg', submittedBy: 'ThamesCairn'},
+    {imageSrc: '/img/slideshowimgs/j3/viverard.jpg', submittedBy: 'viverard'},
+    {imageSrc: '/img/slideshowimgs/j3/WERTECHS.2.jpg', submittedBy: 'WERTECHS'},
+    {imageSrc: '/img/slideshowimgs/j3/DrorPig.jpg', submittedBy: 'DrorPig'},
+    {imageSrc: '/img/slideshowimgs/j3/ThamesCairn.1.jpg', submittedBy: 'ThamesCairn'},
+    {imageSrc: '/img/slideshowimgs/j3/DeltonaX.jpg', submittedBy: 'DeltonaX'},
+    {imageSrc: '/img/slideshowimgs/j3/ThamesCairn.2.jpg', submittedBy: 'ThamesCairn'},
 
     /* old
     {imageSrc: '/img/slideshowimgs/j3/HarvestMoth.jpg', submittedBy: 'HarvestMoth'},
@@ -281,6 +281,17 @@ const j3Slides = [
     {imageSrc: '/img/slideshowimgs/j3/Annaas.jpg', submittedBy: 'Annaas'},
     {imageSrc: '/img/slideshowimgs/j3/TacitusKG.jpg', submittedBy: 'TacitusKG'},
     {imageSrc: '/img/slideshowimgs/j3/WERTECHS.1.jpg', submittedBy: 'WERTECHS'},
+    {imageSrc: '/img/slideshowimgs/j3/Potatoboy9999.jpg', submittedBy: 'Potatoboy9999'},
+    {imageSrc: '/img/slideshowimgs/j3/Annaas.1.jpg', submittedBy: 'Annaas'},
+    {imageSrc: '/img/slideshowimgs/j3/PureWhiteMk7.1.jpg', submittedBy: 'PureWhiteMk7'},
+    {imageSrc: '/img/slideshowimgs/j3/GooseOnnaLoose.jpg', submittedBy: 'GooseOnnaLoose'},
+    {imageSrc: '/img/slideshowimgs/j3/Shadow55.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/Vloxer.jpg', submittedBy: 'Vloxer'},
+    {imageSrc: '/img/slideshowimgs/j3/ScareCrow_Wheat.jpg', submittedBy: 'ScareCrow_Wheat'},
+    {imageSrc: '/img/slideshowimgs/j3/Atomic_Snarl.1.jpg', submittedBy: 'Atomic_Snarl'},
+    {imageSrc: '/img/slideshowimgs/j3/Shadow55.1.jpg', submittedBy: '_Shadow55'},
+    {imageSrc: '/img/slideshowimgs/j3/WERTECHS.jpg', submittedBy: 'WERTECHS'},
+    {imageSrc: '/img/slideshowimgs/j3/XxShMODyXx.jpg', submittedBy: 'XxShMODyXx'},
      */
 ];
 
