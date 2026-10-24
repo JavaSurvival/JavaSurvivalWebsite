@@ -263,6 +263,7 @@ const j3Slides = [
     {imageSrc: '/img/slideshowimgs/j3/viverard.jpg', submittedBy: 'viverard'},
     {imageSrc: '/img/slideshowimgs/j3/WERTECHS.2.jpg', submittedBy: 'WERTECHS'},
     {imageSrc: '/img/slideshowimgs/j3/DrorPig.jpg', submittedBy: 'DrorPig'},
+    {imageSrc: '/img/slideshowimgs/j3/viverard.1.jpg', submittedBy: 'viverard'},
     {imageSrc: '/img/slideshowimgs/j3/ThamesCairn.1.jpg', submittedBy: 'ThamesCairn'},
     {imageSrc: '/img/slideshowimgs/j3/DeltonaX.jpg', submittedBy: 'DeltonaX'},
     {imageSrc: '/img/slideshowimgs/j3/ThamesCairn.2.jpg', submittedBy: 'ThamesCairn'},
