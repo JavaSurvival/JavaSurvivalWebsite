@@ -96,54 +96,7 @@ function homePageHeader() {
     </header>`;
 }
 
-function rulesPageHeader() {
-    return `
-    <header>
-        <div class="container">
-            <nav class="left-nav">
-            <ul>
-                <!--Links to the left of the icon-->
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                </ul>
-            </nav>
-            <div class="logo" id="logo">
-                <img src="/img/j3/jsicon.jpg" alt="Logo">
-            </div>
-            <nav class="right-nav">
-                <ul>
-                    <!--Links to the right of the icon-->
-                    <li><a href="https://map.javasurvival.com">World Map</a></li>
-                    <li><a href="/stats">Statistics</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button class="hamburger-menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
-        <div class="dropdown">
-            <div class="dropdown-content">
-                <div class="left-right-nav">
-                    <!-- These links only display in the dropdown when viewing on mobile devices (because on pc, we display these in the header!) -->
-                    <a href="/home">Home</a>
-                    <a href="/about">About</a>
-                    <a href="https://map.javasurvival.com">World Map</a>
-                    <a href="/stats">Statistics</a>
-                </div>
-                <!-- These links always display in the dropdown -->
-                <a href="/gallery">Gallery</a>
-                <a href="/downloads">Downloads</a>
-                <a href="https://discord.gg/NAs8nQw" target="_blank">Discord<span class="newTabArrow"></span></a>
-                <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
-                <a href="https://ko-fi.com/javasurvival" target="_blank">Donate<span class="newTabArrow"></span></a>
-            </div>
-        </div>
-    </header>`;
-}
-
-function galleryPageHeader() {
+function homeAboutPageHeader() {
     return `
     <header>
         <div class="container">
@@ -181,6 +134,7 @@ function galleryPageHeader() {
                 </div>
                 <!-- These links always display in the dropdown -->
                 <a href="/rules">Rules</a>
+                <a href="/gallery">Gallery</a>
                 <a href="/downloads">Downloads</a>
                 <a href="https://discord.gg/NAs8nQw" target="_blank">Discord<span class="newTabArrow"></span></a>
                 <a href="https://www.reddit.com/r/JavaSurvival/" target="_blank">Reddit<span class="newTabArrow"></span></a>
@@ -221,8 +175,7 @@ function applyContent(selector, content) {
 document.addEventListener("DOMContentLoaded", () => {
     applyContent('.homePageHeader', homePageHeader());
     applyContent('.aboutPageHeader', aboutPageHeader());
-    applyContent('.rulesPageHeader', rulesPageHeader());
-    applyContent(".galleryPageHeader", galleryPageHeader())
+    applyContent('.homeAboutPageHeader', homeAboutPageHeader());
     applyContent('.footer', footer());
     applyContent('.newTabArrow', newTabArrowSVG);
     applyContent('.downloadArrow', downloadArrowSVG);
