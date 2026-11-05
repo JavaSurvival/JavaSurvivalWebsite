@@ -43,7 +43,7 @@ const j3Old = [
 ];
 
 // Thank you to shadow for running this event!
-const ghastlyGrove26 = [
+const ghastlyGrove2026 = [
     {imageSrc: '/img/slideshowimgs/ghastlyGrove2026/ghastlyGrove.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/ghastlyGrove2026/ghastlyGrove1.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/ghastlyGrove2026/ghastlyGrove2.jpg', submittedBy: 'n/a'},
@@ -56,7 +56,7 @@ const ghastlyGrove26 = [
 ]
 
 // Thank you to aspera for providing these wonderful images!
-const christmas25 = [
+const christmas2025 = [
     {imageSrc: '/img/slideshowimgs/christmas2025/christmas.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/christmas2025/christmas1.jpg', submittedBy: 'n/a'},
     {imageSrc: '/img/slideshowimgs/christmas2025/christmas2.jpg', submittedBy: 'n/a'},
@@ -65,7 +65,7 @@ const christmas25 = [
 ];
 
 // Sneaky Screenshots Summer '25 Event
-const snscsu25 = [
+const sneakyScreenshotsSummer2025 = [
     {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/PerAsperaSys.jpg', submittedBy: 'PerAsperaSys'},
     {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/JangiGabmeister.jpg', submittedBy: 'JangiGabmeister'},
     {imageSrc: '/img/slideshowimgs/SneakyScreenshotsSummer25/sw4gg7.jpg', submittedBy: 'sw4gg7'},

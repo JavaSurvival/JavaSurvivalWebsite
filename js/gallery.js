@@ -3,9 +3,9 @@
 // Order shown on the page. Add new sets of images here.
 const gallerySections = [
     {id: 'j3-old', title: 'Java Survival 3', slides: j3Old},
-    {id: 'grove2026', title: 'Ghastly Grove 2026', slides: ghastlyGrove26},
-    {id: 'christmas2025', title: 'Christmas 2025', slides: christmas25},
-    {id: 'sneaky25', title: 'Sneaky Screenshots Summer 2025', slides: snscsu25},
+    {id: 'grove26', title: 'Ghastly Grove 2026', slides: ghastlyGrove2026},
+    {id: 'christmas25', title: 'Christmas 2025', slides: christmas2025},
+    {id: 'sneaky25', title: 'Sneaky Screenshots Summer 2025', slides: sneakyScreenshotsSummer2025},
     {id: 'j2-old', title: 'Java Survival 2', slides: j2Old},
 ];
 
