@@ -3,9 +3,10 @@
 // Order shown on the page. Add new sets of images here.
 const gallerySections = [
     {id: 'j3-old', title: 'Java Survival 3', slides: j3Old},
-    {id: 'j2-old', title: 'Java Survival 2', slides: j2Old},
-    {id: 'sneaky25', title: 'Sneaky Screenshots Summer 2025', slides: snscsu25},
+    {id: 'grove2026', title: 'Ghastly Grove 2026', slides: ghastlyGrove26},
     {id: 'christmas2025', title: 'Christmas 2025', slides: christmas25},
+    {id: 'sneaky25', title: 'Sneaky Screenshots Summer 2025', slides: snscsu25},
+    {id: 'j2-old', title: 'Java Survival 2', slides: j2Old},
 ];
 
 function escapeHTML(str) {
